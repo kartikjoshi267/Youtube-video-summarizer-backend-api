@@ -30,5 +30,9 @@ def getSummary():
         'summary' : Summarizer(transcript).getSummary()
     })
 
+@app.route('/')
+def main():
+    return "Server is running 🚀🚀"
+
 while True:
     app.run(debug=True)
