@@ -24,7 +24,7 @@ def getSummary():
         transcript += obj['text'] + " "
 
     transcript = transcript.replace('\n', ' ')
-    transcript = transcript[0:3000]
+    transcript = transcript[0:10000]
 
     return json.jsonify({
         'summary' : Summarizer(transcript).getSummary()
